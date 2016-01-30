@@ -3,11 +3,12 @@
 # based on https://github.com/textlab/glossa/blob/master/script/build_ubuntu_essential.sh
 
 TAG=ailispaw/ubuntu-essential
+VERSION=14.04
 
 set -ve
 
 docker build -t ubuntu-essential-multilayer - <<EOF
-FROM ubuntu:14.04
+FROM ubuntu:${VERSION}
 # Make an exception for apt: it gets deselected, even though it probably shouldn't.
 RUN dpkg --clear-selections && echo "apt install" | dpkg --set-selections && \
     SUDO_FORCE_REMOVE=yes DEBIAN_FRONTEND=noninteractive apt-get --purge -y dselect-upgrade && \
@@ -32,5 +33,5 @@ EOF
 docker rmi ubuntu-essential-nocmd
 rm -f "$TMP_FILE"
 
-docker tag -f ${TAG} ${TAG}:14.04
-docker tag -f ${TAG} ${TAG}:14.04-$(date -u +"%Y%m%d")
+docker tag -f ${TAG} ${TAG}:${VERSION}
+docker tag -f ${TAG} ${TAG}:${VERSION}-$(date -u +"%Y%m%d")
