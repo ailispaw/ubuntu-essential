@@ -11,8 +11,8 @@ FROM ubuntu:14.04
 # Make an exception for apt: it gets deselected, even though it probably shouldn't.
 RUN dpkg --clear-selections && echo "apt install" | dpkg --set-selections && \
     SUDO_FORCE_REMOVE=yes DEBIAN_FRONTEND=noninteractive apt-get --purge -y dselect-upgrade && \
-    dpkg-query -Wf '${db:Status-Abbrev}\t${binary:Package}\n' | \
-      grep '^.i' | awk -F'\t' '{print $2 " install"}' | dpkg --set-selections && \
+    dpkg-query -Wf '\${db:Status-Abbrev}\t\${binary:Package}\n' | \
+      grep '^.i' | awk -F'\t' '{print \$2 " install"}' | dpkg --set-selections && \
     rm -r /var/cache/apt /var/lib/apt/lists
 EOF
 
