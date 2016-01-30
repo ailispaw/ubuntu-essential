@@ -25,7 +25,7 @@ docker rmi ubuntu-essential-multilayer
 
 docker import - ubuntu-essential-nocmd < "$TMP_FILE"
 
-docker build -t ${TAG} - <<EOF
+docker build -t ${TAG}:${VERSION} - <<EOF
 FROM ubuntu-essential-nocmd
 CMD ["/bin/bash"]
 EOF
@@ -33,5 +33,8 @@ EOF
 docker rmi ubuntu-essential-nocmd
 rm -f "$TMP_FILE"
 
-docker tag -f ${TAG} ${TAG}:${VERSION}
-docker tag -f ${TAG} ${TAG}:${VERSION}-$(date -u +"%Y%m%d")
+docker tag -f ${TAG}:${VERSION} ${TAG}:${VERSION}-$(date -u +"%Y%m%d")
+if [ "${VERSION}" = "14.04" ];then
+  docker tag -f ${TAG}:${VERSION} ${TAG}:latest
+fi
+
