@@ -13,4 +13,4 @@ clean:
 	vagrant destroy -f
 	$(RM) -r .vagrant
 
-.PHONY: build release clean
+.PHONY: $(TARGETS) release clean
