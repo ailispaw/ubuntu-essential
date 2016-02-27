@@ -3,15 +3,20 @@
 # based on https://github.com/textlab/glossa/blob/master/script/build_ubuntu_essential.sh
 
 TAG=ailispaw/ubuntu-essential
-VERSION=14.04
+VERSION=16.04
+CODENAME=xenial
+REVISION=20160226
 
 set -ve
 
 docker build -t ubuntu-essential-multilayer - <<EOF
-FROM ubuntu:${VERSION}
+FROM ubuntu:${CODENAME}-${REVISION}
 # Make an exception for apt: it gets deselected, even though it probably shouldn't.
 RUN dpkg --clear-selections && echo "apt install" | dpkg --set-selections && \
-    SUDO_FORCE_REMOVE=yes DEBIAN_FRONTEND=noninteractive apt-get --purge -y dselect-upgrade && \
+    DEBIAN_FRONTEND=noninteractive apt-get --purge -y dselect-upgrade && \
+    apt-get purge -y --allow-remove-essential init makedev systemd && \
+    apt-get purge -y libapparmor1 libcap2-bin libcryptsetup4 libdevmapper1.02.1 libkmod2 libseccomp2 && \
+    apt-get --purge -y autoremove && \
     dpkg-query -Wf '\${db:Status-Abbrev}\t\${binary:Package}\n' | \
       grep '^.i' | awk -F'\t' '{print \$2 " install"}' | dpkg --set-selections && \
     rm -r /var/cache/apt /var/lib/apt/lists
@@ -33,8 +38,4 @@ EOF
 docker rmi ubuntu-essential-nocmd
 rm -f "$TMP_FILE"
 
-docker tag -f ${TAG}:${VERSION} ${TAG}:${VERSION}-$(date -u +"%Y%m%d")
-if [ "${VERSION}" = "14.04" ];then
-  docker tag -f ${TAG}:${VERSION} ${TAG}:latest
-fi
-
+docker tag -f ${TAG}:${VERSION} ${TAG}:${VERSION}-${REVISION}

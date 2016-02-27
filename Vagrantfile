@@ -25,5 +25,6 @@ Vagrant.configure(2) do |config|
     sh.inline = "sntp -4sSc pool.ntp.org; date"
   end
 
-  config.vm.provision :shell, path: "build.sh"
+  config.vm.provision "trusty", type: "shell", path: "trusty.sh"
+  config.vm.provision "xenial", type: "shell", path: "xenial.sh"
 end

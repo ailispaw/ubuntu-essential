@@ -1,6 +1,10 @@
-build: Vagrantfile build.sh
+TARGETS := trusty xenial
+
+all: $(TARGETS)
+
+$(TARGETS): % : %.sh Vagrantfile
 	vagrant up --no-provision
-	vagrant provision
+	vagrant provision --provision-with $@
 
 release:
 	docker push ailispaw/ubuntu-essential
