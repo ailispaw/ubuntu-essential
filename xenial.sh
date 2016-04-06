@@ -14,9 +14,9 @@ FROM ubuntu:${CODENAME}-${REVISION}
 # Make an exception for apt: it gets deselected, even though it probably shouldn't.
 RUN dpkg --clear-selections && echo "apt install" | dpkg --set-selections && \
     DEBIAN_FRONTEND=noninteractive apt-get --purge -y dselect-upgrade && \
-    apt-get purge -y --allow-remove-essential init makedev systemd && \
-    apt-get purge -y libapparmor1 libcap2-bin libcryptsetup4 libdevmapper1.02.1 libkmod2 libseccomp2 && \
-    apt-get --purge -y autoremove && \
+    DEBIAN_FRONTEND=noninteractive apt-get purge -y --allow-remove-essential init makedev systemd && \
+    DEBIAN_FRONTEND=noninteractive apt-get purge -y libapparmor1 libcap2-bin libcryptsetup4 libdevmapper1.02.1 libkmod2 libseccomp2 && \
+    DEBIAN_FRONTEND=noninteractive apt-get --purge -y autoremove && \
     dpkg-query -Wf '\${db:Status-Abbrev}\t\${binary:Package}\n' | \
       grep '^.i' | awk -F'\t' '{print \$2 " install"}' | dpkg --set-selections && \
     rm -r /var/cache/apt /var/lib/apt/lists
