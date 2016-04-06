@@ -5,7 +5,7 @@
 TAG=ailispaw/ubuntu-essential
 VERSION=16.04
 CODENAME=xenial
-REVISION=20160317
+REVISION=20160331.1
 
 set -ve
 
@@ -13,7 +13,8 @@ docker build -t ubuntu-essential-multilayer - <<EOF
 FROM ubuntu:${CODENAME}-${REVISION}
 # Make an exception for apt: it gets deselected, even though it probably shouldn't.
 RUN dpkg --clear-selections && echo "apt install" | dpkg --set-selections && \
-    DEBIAN_FRONTEND=noninteractive apt-get --purge -y dselect-upgrade && \
+    DEBIAN_FRONTEND=noninteractive apt-get --purge -y dselect-upgrade || true && \
+    DEBIAN_FRONTEND=noninteractive apt-get purge -y initscripts insserv libncurses5 libprocps4 locales tzdata && \
     DEBIAN_FRONTEND=noninteractive apt-get purge -y --allow-remove-essential init makedev systemd && \
     DEBIAN_FRONTEND=noninteractive apt-get purge -y libapparmor1 libcap2-bin libcryptsetup4 libdevmapper1.02.1 libkmod2 libseccomp2 && \
     DEBIAN_FRONTEND=noninteractive apt-get --purge -y autoremove && \
