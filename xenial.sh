@@ -5,7 +5,7 @@
 TAG=ailispaw/ubuntu-essential
 VERSION=16.04
 CODENAME=xenial
-REVISION=20160331.1
+REVISION=20160422
 
 set -ve
 
@@ -14,9 +14,8 @@ FROM ubuntu:${CODENAME}-${REVISION}
 # Make an exception for apt: it gets deselected, even though it probably shouldn't.
 RUN export DEBIAN_FRONTEND=noninteractive && \
     dpkg --clear-selections && echo "apt install" | dpkg --set-selections && \
-    apt-get --purge -y dselect-upgrade || true && \
-    apt-get purge -y initscripts insserv libncurses5 libprocps4 locales tzdata && \
-    apt-get purge -y --allow-remove-essential init makedev systemd && \
+    apt-get --purge -y dselect-upgrade && \
+    apt-get purge -y --allow-remove-essential init systemd && \
     apt-get purge -y libapparmor1 libcap2-bin libcryptsetup4 libdevmapper1.02.1 libkmod2 libseccomp2 && \
     apt-get --purge -y autoremove && \
     dpkg-query -Wf '\${db:Status-Abbrev}\t\${binary:Package}\n' | \
