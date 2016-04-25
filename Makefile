@@ -1,4 +1,4 @@
-TARGETS := trusty xenial
+TARGETS := xenial trusty
 
 all: $(TARGETS)
 
