@@ -36,4 +36,3 @@ docker rmi ubuntu-essential-nocmd
 rm -f "$TMP_FILE"
 
 docker tag -f ${TAG}:${VERSION} ${TAG}:${VERSION}-${REVISION}
-docker tag -f ${TAG}:${VERSION} ${TAG}:latest
