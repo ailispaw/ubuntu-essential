@@ -1,4 +1,4 @@
-# A dummy plugin for DockerRoot to set hostname and network correctly at the very first `vagrant up`
+# A dummy plugin for Barge to set hostname and network correctly at the very first `vagrant up`
 module VagrantPlugins
   module GuestLinux
     class Plugin < Vagrant.plugin("2")
@@ -11,8 +11,7 @@ end
 Vagrant.configure(2) do |config|
   config.vm.define "ubuntu-essential"
 
-  config.vm.box = "ailispaw/docker-root"
-  config.vm.box_version = ">= 1.3.9"
+  config.vm.box = "ailispaw/barge"
 
   config.vm.provision "trusty", type: "shell", path: "trusty.sh"
   config.vm.provision "xenial", type: "shell", path: "xenial.sh"
