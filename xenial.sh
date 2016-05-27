@@ -5,7 +5,7 @@
 TAG=ailispaw/ubuntu-essential
 VERSION=16.04
 CODENAME=xenial
-REVISION=20160503
+REVISION=20160525
 
 set -ve
 
@@ -16,7 +16,7 @@ RUN export DEBIAN_FRONTEND=noninteractive && \
     dpkg --clear-selections && echo "apt install" | dpkg --set-selections && \
     apt-get --purge -y dselect-upgrade && \
     apt-get purge -y --allow-remove-essential init systemd && \
-    apt-get purge -y libapparmor1 libcap2-bin libcryptsetup4 libdevmapper1.02.1 libkmod2 libseccomp2 && \
+    apt-get purge -y libapparmor1 libcap2 libcryptsetup4 libdevmapper1.02.1 libkmod2 libseccomp2 && \
     apt-get --purge -y autoremove && \
     dpkg-query -Wf '\${db:Status-Abbrev}\t\${binary:Package}\n' | \
       grep '^.i' | awk -F'\t' '{print \$2 " install"}' | dpkg --set-selections && \

@@ -5,7 +5,7 @@
 TAG=ailispaw/ubuntu-essential
 VERSION=14.04
 CODENAME=trusty
-REVISION=20160503.1
+REVISION=20160526
 
 set -ve
 

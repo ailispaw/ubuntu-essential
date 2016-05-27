@@ -30,7 +30,6 @@ libblkid1:amd64					install
 libbz2-1.0:amd64				install
 libc-bin					install
 libc6:amd64					install
-libcap2:amd64					install
 libcomerr2:amd64				install
 libdb5.3:amd64					install
 libdebconfclient0:amd64				install
