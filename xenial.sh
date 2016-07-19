@@ -5,7 +5,7 @@
 TAG=ailispaw/ubuntu-essential
 VERSION=16.04
 CODENAME=xenial
-REVISION=20160706
+REVISION=20160718.1
 
 set -ve
 
