@@ -9,6 +9,13 @@ REVISION=20160706
 
 set -ve
 
+wget -q https://raw.githubusercontent.com/tianon/docker-brew-ubuntu-core/dist/${CODENAME}/Dockerfile
+wget -q https://partner-images.canonical.com/core/${CODENAME}/${REVISION}/ubuntu-${CODENAME}-core-cloudimg-amd64-root.tar.gz
+
+docker build -t ubuntu:${CODENAME}-${REVISION} .
+
+rm -f Dockerfile ubuntu-${CODENAME}-core-cloudimg-amd64-root.tar.gz
+
 docker build -t ubuntu-essential-multilayer - <<EOF
 FROM ubuntu:${CODENAME}-${REVISION}
 # Make an exception for apt: it gets deselected, even though it probably shouldn't.
