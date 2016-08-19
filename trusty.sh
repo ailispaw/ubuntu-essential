@@ -24,7 +24,6 @@ RUN dpkg --clear-selections && echo "apt install" | dpkg --set-selections && \
     dpkg-query -Wf '\${db:Status-Abbrev}\t\${binary:Package}\n' | \
       grep '^.i' | awk -F'\t' '{print \$2 " install"}' | dpkg --set-selections && \
     rm -r /var/cache/apt /var/lib/apt/lists
-RUN rm -f /core
 EOF
 
 TMP_FILE="$(mktemp -t ubuntu-essential-XXXXXX).tar.gz"
