@@ -14,8 +14,8 @@ e2fsprogs	1.42.9-3ubuntu1.3
 findutils	4.4.2-7
 gcc-4.8-base:amd64	4.8.4-2ubuntu1~14.04.3
 gcc-4.9-base:amd64	4.9.3-0ubuntu4
-gnupg	1.4.16-1ubuntu2.3
-gpgv	1.4.16-1ubuntu2.3
+gnupg	1.4.16-1ubuntu2.4
+gpgv	1.4.16-1ubuntu2.4
 grep	2.16-1
 gzip	1.6-3ubuntu1
 hostname	3.15ubuntu1
