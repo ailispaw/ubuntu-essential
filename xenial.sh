@@ -1,7 +1,5 @@
 #!/bin/bash
 
-# based on https://github.com/textlab/glossa/blob/master/script/build_ubuntu_essential.sh
-
 TAG=ailispaw/ubuntu-essential
 VERSION=16.04
 CODENAME=xenial
@@ -9,6 +7,7 @@ REVISION=20160818
 
 set -ve
 
+# Build the official image from https://github.com/tianon/docker-brew-ubuntu-core
 wget -q https://raw.githubusercontent.com/tianon/docker-brew-ubuntu-core/dist/${CODENAME}/Dockerfile
 wget -q https://partner-images.canonical.com/core/${CODENAME}/${REVISION}/ubuntu-${CODENAME}-core-cloudimg-amd64-root.tar.gz
 
@@ -16,6 +15,7 @@ docker build -t ubuntu:${CODENAME}-${REVISION} .
 
 rm -f Dockerfile ubuntu-${CODENAME}-core-cloudimg-amd64-root.tar.gz
 
+# Based on https://github.com/textlab/glossa/blob/master/script/build_ubuntu_essential.sh
 docker build -t ubuntu-essential-multilayer - <<EOF
 FROM ubuntu:${CODENAME}-${REVISION}
 # Make an exception for apt: it gets deselected, even though it probably shouldn't.
@@ -46,5 +46,6 @@ EOF
 docker rmi ubuntu-essential-nocmd
 rm -f "$TMP_FILE"
 
+# Set tags to release
 docker tag -f ${TAG}:${VERSION} ${TAG}:${VERSION}-${REVISION}
 docker tag -f ${TAG}:${VERSION} ${TAG}:latest
