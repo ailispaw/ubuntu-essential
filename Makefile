@@ -1,12 +1,15 @@
 TARGETS := xenial trusty
 
-all: $(TARGETS)
+all: $(TARGETS) nodoc
 
 $(TARGETS): % : %.sh Vagrantfile | vagrant
 	vagrant provision --provision-with $@
 	$(RM) $@.pkg
 	docker run -t --rm $$(docker images -q | head -1) dpkg --get-selections > $@.pkg
 	docker run -t --rm $$(docker images -q | head -1) dpkg-query -W > $@.manifest
+
+nodoc: nodoc.sh Vagrantfile | vagrant
+	vagrant provision --provision-with $@
 
 release:
 	docker push ailispaw/ubuntu-essential
@@ -18,4 +21,4 @@ clean:
 	vagrant destroy -f
 	$(RM) -r .vagrant
 
-.PHONY: $(TARGETS) release vagrant clean
+.PHONY: $(TARGETS) nodoc release vagrant clean

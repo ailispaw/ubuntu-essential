@@ -15,4 +15,6 @@ Vagrant.configure(2) do |config|
 
   config.vm.provision "trusty", type: "shell", path: "trusty.sh"
   config.vm.provision "xenial", type: "shell", path: "xenial.sh"
+
+  config.vm.provision "nodoc", type: "shell", path: "nodoc.sh"
 end
