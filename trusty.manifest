@@ -68,7 +68,7 @@ sensible-utils	0.0.9
 sysv-rc	2.88dsf-41ubuntu6.3
 sysvinit-utils	2.88dsf-41ubuntu6.3
 tar	1.27.1-1
-tzdata	2016g-0ubuntu0.14.04
+tzdata	2016h-0ubuntu0.14.04
 ubuntu-keyring	2012.05.19
 util-linux	2.20.1-5.1ubuntu20.7
 zlib1g:amd64	1:1.2.8.dfsg-1ubuntu1
