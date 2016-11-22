@@ -73,7 +73,7 @@ readline-common	6.3-8ubuntu2
 sed	4.2.2-7
 sensible-utils	0.0.9
 sysvinit-utils	2.88dsf-59.3ubuntu2
-tar	1.28-2.1
+tar	1.28-2.1ubuntu0.1
 ubuntu-keyring	2012.05.19
 util-linux	2.27.1-6ubuntu3.1
 zlib1g:amd64	1:1.2.8.dfsg-2ubuntu4
