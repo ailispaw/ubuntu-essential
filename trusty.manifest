@@ -1,4 +1,4 @@
-apt	1.0.1ubuntu2.15
+apt	1.0.1ubuntu2.17
 base-files	7.2ubuntu5.5
 base-passwd	3.5.33
 bash	4.3-7ubuntu1.5
@@ -21,7 +21,7 @@ gzip	1.6-3ubuntu1
 hostname	3.15ubuntu1
 insserv	1.14.0-5ubuntu2
 libacl1:amd64	2.2.52-1
-libapt-pkg4.12:amd64	1.0.1ubuntu2.15
+libapt-pkg4.12:amd64	1.0.1ubuntu2.17
 libattr1:amd64	1:2.4.47-1ubuntu1
 libaudit-common	1:2.3.2-2ubuntu1
 libaudit1:amd64	1:2.3.2-2ubuntu1
