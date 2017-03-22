@@ -43,4 +43,4 @@ docker rmi ubuntu-essential-nocmd
 rm -f "$TMP_FILE"
 
 # Set tags to release
-docker tag -f ${TAG}:${VERSION} ${TAG}:${VERSION}-${REVISION}
+docker tag ${TAG}:${VERSION} ${TAG}:${VERSION}-${REVISION}
