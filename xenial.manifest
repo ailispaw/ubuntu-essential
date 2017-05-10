@@ -76,4 +76,4 @@ sysvinit-utils	2.88dsf-59.3ubuntu2
 tar	1.28-2.1ubuntu0.1
 ubuntu-keyring	2012.05.19
 util-linux	2.27.1-6ubuntu3.2
-zlib1g:amd64	1:1.2.8.dfsg-2ubuntu4
+zlib1g:amd64	1:1.2.8.dfsg-2ubuntu4.1
