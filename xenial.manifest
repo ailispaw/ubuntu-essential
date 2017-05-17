@@ -2,7 +2,7 @@ adduser	3.113+nmu3ubuntu4
 apt	1.2.20
 base-files	9.4ubuntu4.4
 base-passwd	3.5.39
-bash	4.3-14ubuntu1.1
+bash	4.3-14ubuntu1.2
 bsdutils	1:2.27.1-6ubuntu3.2
 coreutils	8.25-2ubuntu2
 dash	0.5.8-2.1ubuntu2
