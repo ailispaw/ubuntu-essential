@@ -8,7 +8,7 @@ REVISION=20170606
 set -ve
 
 # Build the official image from https://github.com/tianon/docker-brew-ubuntu-core
-wget -q https://raw.githubusercontent.com/tianon/docker-brew-ubuntu-core/dist/${CODENAME}/Dockerfile
+wget -q https://raw.githubusercontent.com/tianon/docker-brew-ubuntu-core/dist-amd64/${CODENAME}/Dockerfile
 wget -q https://partner-images.canonical.com/core/${CODENAME}/${REVISION}/ubuntu-${CODENAME}-core-cloudimg-amd64-root.tar.gz
 
 docker build -t ubuntu:${CODENAME}-${REVISION} .
