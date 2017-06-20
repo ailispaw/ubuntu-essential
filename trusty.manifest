@@ -27,8 +27,8 @@ libaudit-common	1:2.3.2-2ubuntu1
 libaudit1:amd64	1:2.3.2-2ubuntu1
 libblkid1:amd64	2.20.1-5.1ubuntu20.9
 libbz2-1.0:amd64	1.0.6-5
-libc-bin	2.19-0ubuntu6.11
-libc6:amd64	2.19-0ubuntu6.11
+libc-bin	2.19-0ubuntu6.13
+libc6:amd64	2.19-0ubuntu6.13
 libcomerr2:amd64	1.42.9-3ubuntu1.3
 libdb5.3:amd64	5.3.28-3ubuntu3
 libdebconfclient0:amd64	0.187ubuntu1
@@ -57,7 +57,7 @@ login	1:4.1.5.1-1ubuntu9.5
 lsb-base	4.1+Debian11ubuntu6.2
 mawk	1.3.3-17ubuntu2
 mount	2.20.1-5.1ubuntu20.9
-multiarch-support	2.19-0ubuntu6.11
+multiarch-support	2.19-0ubuntu6.13
 ncurses-base	5.9+20140118-1ubuntu1
 ncurses-bin	5.9+20140118-1ubuntu1
 passwd	1:4.1.5.1-1ubuntu9.5
