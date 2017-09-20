@@ -26,21 +26,11 @@ RUN dpkg --clear-selections && echo "apt install" | dpkg --set-selections && \
     rm -rf /var/cache/apt /var/lib/apt/lists /var/cache/debconf/* /var/log/*
 EOF
 
-TMP_FILE="$(mktemp -t ubuntu-essential-XXXXXX).tar.gz"
+docker run --rm -i ubuntu-essential-multilayer \
+  tar zpc --exclude=/etc/hostname --exclude=/etc/resolv.conf --exclude=/etc/hosts \
+    --one-file-system / | docker import -c 'CMD ["/bin/bash"]' - ${TAG}:${VERSION}
 
-docker run --rm -i ubuntu-essential-multilayer tar zpc --exclude=/etc/hostname \
-  --exclude=/etc/resolv.conf --exclude=/etc/hosts --one-file-system / > "$TMP_FILE"
 docker rmi ubuntu-essential-multilayer
-
-docker import - ubuntu-essential-nocmd < "$TMP_FILE"
-
-docker build -t ${TAG}:${VERSION} - <<EOF
-FROM ubuntu-essential-nocmd
-CMD ["/bin/bash"]
-EOF
-
-docker rmi ubuntu-essential-nocmd
-rm -f "$TMP_FILE"
 
 # Set tags to release
 docker tag ${TAG}:${VERSION} ${TAG}:${VERSION}-${REVISION}

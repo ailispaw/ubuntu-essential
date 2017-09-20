@@ -23,21 +23,11 @@ RUN echo 'path-exclude /usr/share/doc/*'            > /etc/dpkg/dpkg.cfg.d/01_no
     echo 'path-exclude /usr/share/linda/*'         >> /etc/dpkg/dpkg.cfg.d/01_nodoc
 EOF
 
-  TMP_FILE="$(mktemp -t ubuntu-essential-XXXXXX).tar.gz"
+  docker run --rm -i ubuntu-essential-multilayer \
+    tar zpc --exclude=/etc/hostname --exclude=/etc/resolv.conf --exclude=/etc/hosts \
+      --one-file-system / | docker import -c 'CMD ["/bin/bash"]' - ${BASE_IMAGE}-nodoc
 
-  docker run --rm -i ubuntu-essential-multilayer tar zpc --exclude=/etc/hostname \
-    --exclude=/etc/resolv.conf --exclude=/etc/hosts --one-file-system / > "$TMP_FILE"
   docker rmi ubuntu-essential-multilayer
-
-  docker import - ubuntu-essential-nocmd < "$TMP_FILE"
-
-  docker build -t ${BASE_IMAGE}-nodoc - <<EOF
-FROM ubuntu-essential-nocmd
-CMD ["/bin/bash"]
-EOF
-
-  docker rmi ubuntu-essential-nocmd
-  rm -f "$TMP_FILE"
 }
 
 if docker inspect ailispaw/ubuntu-essential:14.04 >/dev/null 2>&1; then
