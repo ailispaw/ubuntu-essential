@@ -25,7 +25,8 @@ EOF
 
   docker run --rm -i ubuntu-essential-multilayer \
     tar zpc --exclude=/etc/hostname --exclude=/etc/resolv.conf --exclude=/etc/hosts \
-      --one-file-system / | docker import -c 'CMD ["/bin/bash"]' - ${BASE_IMAGE}-nodoc
+      --one-file-system / | \
+    docker import -c 'CMD ["/bin/bash"]' -m "${BASE_IMAGE}-nodoc" - ${BASE_IMAGE}-nodoc
 
   docker rmi ubuntu-essential-multilayer
 }

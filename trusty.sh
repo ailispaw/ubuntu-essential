@@ -28,7 +28,8 @@ EOF
 
 docker run --rm -i ubuntu-essential-multilayer \
   tar zpc --exclude=/etc/hostname --exclude=/etc/resolv.conf --exclude=/etc/hosts \
-    --one-file-system / | docker import -c 'CMD ["/bin/bash"]' - ${TAG}:${VERSION}
+    --one-file-system / | \
+  docker import -c 'CMD ["/bin/bash"]' -m "${TAG}:${VERSION}-${REVISION}" - ${TAG}:${VERSION}
 
 docker rmi ubuntu-essential-multilayer
 
