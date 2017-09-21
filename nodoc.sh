@@ -3,7 +3,8 @@
 set -ve
 
 nodoc() {
-  BASE_IMAGE=$1
+  local BASE_IMAGE=$1
+  local COMMENT=$(docker inspect -f '{{.Comment}}' ${BASE_IMAGE})
 
   docker build -t ubuntu-essential-multilayer - <<EOF
 FROM ${BASE_IMAGE}
@@ -26,7 +27,7 @@ EOF
   docker run --rm -i ubuntu-essential-multilayer \
     tar zpc --exclude=/etc/hostname --exclude=/etc/resolv.conf --exclude=/etc/hosts \
       --one-file-system / | \
-    docker import -c 'CMD ["/bin/bash"]' -m "${BASE_IMAGE}-nodoc" - ${BASE_IMAGE}-nodoc
+    docker import -c 'CMD ["/bin/bash"]' -m "${COMMENT}-nodoc" - ${BASE_IMAGE}-nodoc
 
   docker rmi ubuntu-essential-multilayer
 }
