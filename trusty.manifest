@@ -61,14 +61,14 @@ multiarch-support	2.19-0ubuntu6.13
 ncurses-base	5.9+20140118-1ubuntu1
 ncurses-bin	5.9+20140118-1ubuntu1
 passwd	1:4.1.5.1-1ubuntu9.5
-perl-base	5.18.2-2ubuntu1.1
+perl-base	5.18.2-2ubuntu1.3
 readline-common	6.3-4ubuntu2
 sed	4.2.2-4ubuntu1
 sensible-utils	0.0.9
 sysv-rc	2.88dsf-41ubuntu6.3
 sysvinit-utils	2.88dsf-41ubuntu6.3
 tar	1.27.1-1ubuntu0.1
-tzdata	2016j-0ubuntu0.14.04
+tzdata	2017c-0ubuntu0.14.04
 ubuntu-keyring	2012.05.19
 util-linux	2.20.1-5.1ubuntu20.9
 zlib1g:amd64	1:1.2.8.dfsg-1ubuntu1
