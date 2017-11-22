@@ -30,7 +30,7 @@ libbz2-1.0:amd64	1.0.6-5
 libc-bin	2.19-0ubuntu6.13
 libc6:amd64	2.19-0ubuntu6.13
 libcomerr2:amd64	1.42.9-3ubuntu1.3
-libdb5.3:amd64	5.3.28-3ubuntu3
+libdb5.3:amd64	5.3.28-3ubuntu3.1
 libdebconfclient0:amd64	0.187ubuntu1
 libgcc1:amd64	1:4.9.3-0ubuntu4
 liblzma5:amd64	5.1.1alpha+20120614-2ubuntu2
