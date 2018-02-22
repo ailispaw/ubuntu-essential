@@ -12,7 +12,7 @@ dpkg	1.17.5ubuntu5.7
 e2fslibs:amd64	1.42.9-3ubuntu1.3
 e2fsprogs	1.42.9-3ubuntu1.3
 findutils	4.4.2-7
-gcc-4.8-base:amd64	4.8.4-2ubuntu1~14.04.3
+gcc-4.8-base:amd64	4.8.4-2ubuntu1~14.04.4
 gcc-4.9-base:amd64	4.9.3-0ubuntu4
 gnupg	1.4.16-1ubuntu2.4
 gpgv	1.4.16-1ubuntu2.4
@@ -48,7 +48,7 @@ libsemanage1:amd64	2.2-1
 libsepol1:amd64	2.2-1ubuntu0.1
 libslang2:amd64	2.2.4-15ubuntu1
 libss2:amd64	1.42.9-3ubuntu1.3
-libstdc++6:amd64	4.8.4-2ubuntu1~14.04.3
+libstdc++6:amd64	4.8.4-2ubuntu1~14.04.4
 libtinfo5:amd64	5.9+20140118-1ubuntu1
 libusb-0.1-4:amd64	2:0.1.12-23.3ubuntu1
 libustr-1.0-1:amd64	1.0.4-3ubuntu2
