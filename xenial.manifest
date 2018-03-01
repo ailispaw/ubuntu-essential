@@ -71,7 +71,7 @@ passwd	1:4.2-3.1ubuntu5.3
 perl-base	5.22.1-9ubuntu0.2
 readline-common	6.3-8ubuntu2
 sed	4.2.2-7
-sensible-utils	0.0.9
+sensible-utils	0.0.9ubuntu0.16.04.1
 sysvinit-utils	2.88dsf-59.3ubuntu2
 tar	1.28-2.1ubuntu0.1
 ubuntu-keyring	2012.05.19
