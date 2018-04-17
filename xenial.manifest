@@ -41,10 +41,10 @@ liblz4-1:amd64	0.0~r131-2ubuntu2
 liblzma5:amd64	5.1.1alpha+20120614-2ubuntu2
 libmount1:amd64	2.27.1-6ubuntu3.4
 libncursesw5:amd64	6.0+20160213-1ubuntu1
-libpam-modules:amd64	1.1.8-3.2ubuntu2
-libpam-modules-bin	1.1.8-3.2ubuntu2
-libpam-runtime	1.1.8-3.2ubuntu2
-libpam0g:amd64	1.1.8-3.2ubuntu2
+libpam-modules:amd64	1.1.8-3.2ubuntu2.1
+libpam-modules-bin	1.1.8-3.2ubuntu2.1
+libpam-runtime	1.1.8-3.2ubuntu2.1
+libpam0g:amd64	1.1.8-3.2ubuntu2.1
 libpcre3:amd64	2:8.38-3.1
 libreadline6:amd64	6.3-8ubuntu2
 libselinux1:amd64	2.4-3build2
@@ -68,7 +68,7 @@ multiarch-support	2.23-0ubuntu10
 ncurses-base	6.0+20160213-1ubuntu1
 ncurses-bin	6.0+20160213-1ubuntu1
 passwd	1:4.2-3.1ubuntu5.3
-perl-base	5.22.1-9ubuntu0.2
+perl-base	5.22.1-9ubuntu0.3
 readline-common	6.3-8ubuntu2
 sed	4.2.2-7
 sensible-utils	0.0.9ubuntu0.16.04.1
