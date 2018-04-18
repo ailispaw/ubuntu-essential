@@ -61,7 +61,7 @@ multiarch-support	2.19-0ubuntu6.14
 ncurses-base	5.9+20140118-1ubuntu1
 ncurses-bin	5.9+20140118-1ubuntu1
 passwd	1:4.1.5.1-1ubuntu9.5
-perl-base	5.18.2-2ubuntu1.3
+perl-base	5.18.2-2ubuntu1.4
 readline-common	6.3-4ubuntu2
 sed	4.2.2-4ubuntu1
 sensible-utils	0.0.9ubuntu0.14.04.1
