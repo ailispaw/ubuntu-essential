@@ -1,4 +1,4 @@
-TARGETS := xenial trusty
+TARGETS := bionic xenial trusty
 
 all: $(TARGETS) nodoc
 

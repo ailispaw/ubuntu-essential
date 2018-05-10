@@ -38,3 +38,6 @@ fi
 if docker inspect ailispaw/ubuntu-essential:16.04 >/dev/null 2>&1; then
   nodoc ailispaw/ubuntu-essential:16.04
 fi
+if docker inspect ailispaw/ubuntu-essential:18.04 >/dev/null 2>&1; then
+  nodoc ailispaw/ubuntu-essential:18.04
+fi
