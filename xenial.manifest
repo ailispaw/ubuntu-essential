@@ -15,8 +15,8 @@ e2fsprogs	1.42.13-1ubuntu1
 findutils	4.6.0+git+20160126-2
 gcc-5-base:amd64	5.4.0-6ubuntu1~16.04.9
 gcc-6-base:amd64	6.0.1-0ubuntu1
-gnupg	1.4.20-1ubuntu3.1
-gpgv	1.4.20-1ubuntu3.1
+gnupg	1.4.20-1ubuntu3.2
+gpgv	1.4.20-1ubuntu3.2
 grep	2.25-1~16.04.1
 gzip	1.6-4ubuntu1
 hostname	3.16ubuntu2
