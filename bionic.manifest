@@ -14,7 +14,7 @@ e2fsprogs	1.44.1-1
 fdisk	2.31.1-0.4ubuntu3.1
 findutils	4.6.0+git+20170828-2
 gcc-8-base:amd64	8-20180414-1ubuntu2
-gpgv	2.2.4-1ubuntu1
+gpgv	2.2.4-1ubuntu1.1
 grep	3.1-2
 gzip	1.6-5ubuntu1
 hostname	3.20
@@ -74,7 +74,7 @@ mount	2.31.1-0.4ubuntu3.1
 ncurses-base	6.1-1ubuntu1.18.04
 ncurses-bin	6.1-1ubuntu1.18.04
 passwd	1:4.5-1ubuntu1
-perl-base	5.26.1-6
+perl-base	5.26.1-6ubuntu0.1
 sed	4.4-2
 sysvinit-utils	2.88dsf-59.10ubuntu1
 tar	1.29b-2
