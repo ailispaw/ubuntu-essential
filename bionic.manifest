@@ -36,7 +36,7 @@ libext2fs2:amd64	1.44.1-1
 libfdisk1:amd64	2.31.1-0.4ubuntu3.1
 libffi6:amd64	3.2.1-8
 libgcc1:amd64	1:8-20180414-1ubuntu2
-libgcrypt20:amd64	1.8.1-4ubuntu1
+libgcrypt20:amd64	1.8.1-4ubuntu1.1
 libgmp10:amd64	2:6.1.2+dfsg-2
 libgnutls30:amd64	3.5.18-1ubuntu1
 libgpg-error0:amd64	1.27-6
