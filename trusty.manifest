@@ -14,8 +14,8 @@ e2fsprogs	1.42.9-3ubuntu1.3
 findutils	4.4.2-7
 gcc-4.8-base:amd64	4.8.4-2ubuntu1~14.04.4
 gcc-4.9-base:amd64	4.9.3-0ubuntu4
-gnupg	1.4.16-1ubuntu2.5
-gpgv	1.4.16-1ubuntu2.5
+gnupg	1.4.16-1ubuntu2.6
+gpgv	1.4.16-1ubuntu2.6
 grep	2.16-1
 gzip	1.6-3ubuntu1
 hostname	3.15ubuntu1
@@ -71,4 +71,4 @@ tar	1.27.1-1ubuntu0.1
 tzdata	2017c-0ubuntu0.14.04
 ubuntu-keyring	2012.05.19
 util-linux	2.20.1-5.1ubuntu20.9
-zlib1g:amd64	1:1.2.8.dfsg-1ubuntu1
+zlib1g:amd64	1:1.2.8.dfsg-1ubuntu1.1
