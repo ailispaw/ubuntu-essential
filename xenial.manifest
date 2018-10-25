@@ -54,9 +54,9 @@ libsepol1:amd64	2.4-2
 libsmartcols1:amd64	2.27.1-6ubuntu3.6
 libss2:amd64	1.42.13-1ubuntu1
 libstdc++6:amd64	5.4.0-6ubuntu1~16.04.10
-libsystemd0:amd64	229-4ubuntu21.4
+libsystemd0:amd64	229-4ubuntu21.5
 libtinfo5:amd64	6.0+20160213-1ubuntu1
-libudev1:amd64	229-4ubuntu21.4
+libudev1:amd64	229-4ubuntu21.5
 libusb-0.1-4:amd64	2:0.1.12-28
 libustr-1.0-1:amd64	1.0.4-5
 libuuid1:amd64	2.27.1-6ubuntu3.6
