@@ -78,6 +78,6 @@ perl-base	5.26.1-6ubuntu0.2
 sed	4.4-2
 sysvinit-utils	2.88dsf-59.10ubuntu1
 tar	1.29b-2
-ubuntu-keyring	2018.02.28
+ubuntu-keyring	2018.09.18.1~18.04.0
 util-linux	2.31.1-0.4ubuntu3.2
 zlib1g:amd64	1:1.2.11.dfsg-0ubuntu2
