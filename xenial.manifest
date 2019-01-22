@@ -1,5 +1,5 @@
 adduser	3.113+nmu3ubuntu4
-apt	1.2.29
+apt	1.2.29ubuntu0.1
 base-files	9.4ubuntu4.7
 base-passwd	3.5.39
 bash	4.3-14ubuntu1.2
@@ -22,7 +22,7 @@ gzip	1.6-4ubuntu1
 hostname	3.16ubuntu2
 init-system-helpers	1.29ubuntu4
 libacl1:amd64	2.2.52-3
-libapt-pkg5.0:amd64	1.2.29
+libapt-pkg5.0:amd64	1.2.29ubuntu0.1
 libattr1:amd64	1:2.4.47-2
 libaudit-common	1:2.4.5-1ubuntu2.1
 libaudit1:amd64	1:2.4.5-1ubuntu2.1
