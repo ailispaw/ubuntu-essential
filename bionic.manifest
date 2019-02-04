@@ -10,7 +10,7 @@ debconf	1.5.66
 debianutils	4.8.4
 diffutils	1:3.6-1
 dpkg	1.19.0.5ubuntu2.1
-e2fsprogs	1.44.1-1ubuntu1
+e2fsprogs	1.44.1-1ubuntu1.1
 fdisk	2.31.1-0.4ubuntu3.3
 findutils	4.6.0+git+20170828-2
 gcc-8-base:amd64	8.2.0-1ubuntu2~18.04
@@ -29,10 +29,10 @@ libbz2-1.0:amd64	1.0.6-8.1
 libc-bin	2.27-3ubuntu1
 libc6:amd64	2.27-3ubuntu1
 libcap-ng0:amd64	0.7.7-3.1
-libcom-err2:amd64	1.44.1-1ubuntu1
+libcom-err2:amd64	1.44.1-1ubuntu1.1
 libdb5.3:amd64	5.3.28-13.1ubuntu1
 libdebconfclient0:amd64	0.213ubuntu1
-libext2fs2:amd64	1.44.1-1ubuntu1
+libext2fs2:amd64	1.44.1-1ubuntu1.1
 libfdisk1:amd64	2.31.1-0.4ubuntu3.3
 libffi6:amd64	3.2.1-8
 libgcc1:amd64	1:8.2.0-1ubuntu2~18.04
@@ -59,7 +59,7 @@ libsemanage-common	2.7-2build2
 libsemanage1:amd64	2.7-2build2
 libsepol1:amd64	2.7-1
 libsmartcols1:amd64	2.31.1-0.4ubuntu3.3
-libss2:amd64	1.44.1-1ubuntu1
+libss2:amd64	1.44.1-1ubuntu1.1
 libstdc++6:amd64	8.2.0-1ubuntu2~18.04
 libsystemd0:amd64	237-3ubuntu10.11
 libtasn1-6:amd64	4.13-2
