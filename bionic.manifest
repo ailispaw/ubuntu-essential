@@ -48,10 +48,10 @@ libmount1:amd64	2.31.1-0.4ubuntu3.3
 libncursesw5:amd64	6.1-1ubuntu1.18.04
 libnettle6:amd64	3.4-1
 libp11-kit0:amd64	0.23.9-2
-libpam-modules:amd64	1.1.8-3.6ubuntu2
-libpam-modules-bin	1.1.8-3.6ubuntu2
-libpam-runtime	1.1.8-3.6ubuntu2
-libpam0g:amd64	1.1.8-3.6ubuntu2
+libpam-modules:amd64	1.1.8-3.6ubuntu2.18.04.1
+libpam-modules-bin	1.1.8-3.6ubuntu2.18.04.1
+libpam-runtime	1.1.8-3.6ubuntu2.18.04.1
+libpam0g:amd64	1.1.8-3.6ubuntu2.18.04.1
 libpcre3:amd64	2:8.39-9
 libseccomp2:amd64	2.3.1-2.1ubuntu4
 libselinux1:amd64	2.7-2build2
