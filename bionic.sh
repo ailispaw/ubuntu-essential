@@ -3,7 +3,7 @@
 TAG=ailispaw/ubuntu-essential
 VERSION=18.04
 CODENAME=bionic
-REVISION=20190417
+REVISION=20190424
 
 set -ve
 
