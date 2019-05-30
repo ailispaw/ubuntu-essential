@@ -38,7 +38,7 @@ libffi6:amd64	3.2.1-8
 libgcc1:amd64	1:8.3.0-6ubuntu1~18.04
 libgcrypt20:amd64	1.8.1-4ubuntu1.1
 libgmp10:amd64	2:6.1.2+dfsg-2
-libgnutls30:amd64	3.5.18-1ubuntu1
+libgnutls30:amd64	3.5.18-1ubuntu1.1
 libgpg-error0:amd64	1.27-6
 libhogweed4:amd64	3.4-1
 libidn2-0:amd64	2.0.4-1.1build2
