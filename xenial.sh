@@ -3,7 +3,7 @@
 TAG=ailispaw/ubuntu-essential
 VERSION=16.04
 CODENAME=xenial
-REVISION=20190516
+REVISION=20190531
 
 set -ve
 
