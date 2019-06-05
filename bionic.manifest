@@ -30,7 +30,7 @@ libc-bin	2.27-3ubuntu1
 libc6:amd64	2.27-3ubuntu1
 libcap-ng0:amd64	0.7.7-3.1
 libcom-err2:amd64	1.44.1-1ubuntu1.1
-libdb5.3:amd64	5.3.28-13.1ubuntu1
+libdb5.3:amd64	5.3.28-13.1ubuntu1.1
 libdebconfclient0:amd64	0.213ubuntu1
 libext2fs2:amd64	1.44.1-1ubuntu1.1
 libfdisk1:amd64	2.31.1-0.4ubuntu3.3
