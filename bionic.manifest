@@ -25,7 +25,7 @@ libattr1:amd64	1:2.4.47-2build1
 libaudit-common	1:2.8.2-1ubuntu1
 libaudit1:amd64	1:2.8.2-1ubuntu1
 libblkid1:amd64	2.31.1-0.4ubuntu3.3
-libbz2-1.0:amd64	1.0.6-8.1
+libbz2-1.0:amd64	1.0.6-8.1ubuntu0.1
 libc-bin	2.27-3ubuntu1
 libc6:amd64	2.27-3ubuntu1
 libcap-ng0:amd64	0.7.7-3.1
