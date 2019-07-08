@@ -27,7 +27,7 @@ libattr1:amd64	1:2.4.47-2
 libaudit-common	1:2.4.5-1ubuntu2.1
 libaudit1:amd64	1:2.4.5-1ubuntu2.1
 libblkid1:amd64	2.27.1-6ubuntu3.7
-libbz2-1.0:amd64	1.0.6-8ubuntu0.1
+libbz2-1.0:amd64	1.0.6-8ubuntu0.2
 libc-bin	2.23-0ubuntu11
 libc6:amd64	2.23-0ubuntu11
 libcomerr2:amd64	1.42.13-1ubuntu1
@@ -54,9 +54,9 @@ libsepol1:amd64	2.4-2
 libsmartcols1:amd64	2.27.1-6ubuntu3.7
 libss2:amd64	1.42.13-1ubuntu1
 libstdc++6:amd64	5.4.0-6ubuntu1~16.04.11
-libsystemd0:amd64	229-4ubuntu21.21
+libsystemd0:amd64	229-4ubuntu21.22
 libtinfo5:amd64	6.0+20160213-1ubuntu1
-libudev1:amd64	229-4ubuntu21.21
+libudev1:amd64	229-4ubuntu21.22
 libusb-0.1-4:amd64	2:0.1.12-28
 libustr-1.0-1:amd64	1.0.4-5
 libuuid1:amd64	2.27.1-6ubuntu3.7
