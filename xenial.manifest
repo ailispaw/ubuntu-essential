@@ -9,7 +9,7 @@ dash	0.5.8-2.1ubuntu2
 debconf	1.5.58ubuntu2
 debianutils	4.7
 diffutils	1:3.3-3
-dpkg	1.18.4ubuntu1.5
+dpkg	1.18.4ubuntu1.6
 e2fslibs:amd64	1.42.13-1ubuntu1
 e2fsprogs	1.42.13-1ubuntu1
 findutils	4.6.0+git+20160126-2
