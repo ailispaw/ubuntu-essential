@@ -61,10 +61,10 @@ libsepol1:amd64	2.7-1
 libsmartcols1:amd64	2.31.1-0.4ubuntu3.4
 libss2:amd64	1.44.1-1ubuntu1.2
 libstdc++6:amd64	8.3.0-6ubuntu1~18.04.1
-libsystemd0:amd64	237-3ubuntu10.31
+libsystemd0:amd64	237-3ubuntu10.33
 libtasn1-6:amd64	4.13-2
 libtinfo5:amd64	6.1-1ubuntu1.18.04
-libudev1:amd64	237-3ubuntu10.31
+libudev1:amd64	237-3ubuntu10.33
 libunistring2:amd64	0.9.9-0ubuntu2
 libuuid1:amd64	2.31.1-0.4ubuntu3.4
 libzstd1:amd64	1.3.3+dfsg-2ubuntu1.1
