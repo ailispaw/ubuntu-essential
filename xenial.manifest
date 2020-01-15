@@ -35,7 +35,7 @@ libdb5.3:amd64	5.3.28-11ubuntu0.2
 libdebconfclient0:amd64	0.198ubuntu1
 libfdisk1:amd64	2.27.1-6ubuntu3.9
 libgcc1:amd64	1:6.0.1-0ubuntu1
-libgcrypt20:amd64	1.6.5-2ubuntu0.5
+libgcrypt20:amd64	1.6.5-2ubuntu0.6
 libgpg-error0:amd64	1.21-2ubuntu1
 liblz4-1:amd64	0.0~r131-2ubuntu2
 liblzma5:amd64	5.1.1alpha+20120614-2ubuntu2
