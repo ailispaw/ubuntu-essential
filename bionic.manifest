@@ -13,7 +13,7 @@ dpkg	1.19.0.5ubuntu2.3
 e2fsprogs	1.44.1-1ubuntu1.3
 fdisk	2.31.1-0.4ubuntu3.5
 findutils	4.6.0+git+20170828-2
-gcc-8-base:amd64	8.3.0-6ubuntu1~18.04.1
+gcc-8-base:amd64	8.3.0-26ubuntu1~18.04
 gpgv	2.2.4-1ubuntu1.2
 grep	3.1-2build1
 gzip	1.6-5ubuntu1
@@ -35,7 +35,7 @@ libdebconfclient0:amd64	0.213ubuntu1
 libext2fs2:amd64	1.44.1-1ubuntu1.3
 libfdisk1:amd64	2.31.1-0.4ubuntu3.5
 libffi6:amd64	3.2.1-8
-libgcc1:amd64	1:8.3.0-6ubuntu1~18.04.1
+libgcc1:amd64	1:8.3.0-26ubuntu1~18.04
 libgcrypt20:amd64	1.8.1-4ubuntu1.2
 libgmp10:amd64	2:6.1.2+dfsg-2
 libgnutls30:amd64	3.5.18-1ubuntu1.3
@@ -60,7 +60,7 @@ libsemanage1:amd64	2.7-2build2
 libsepol1:amd64	2.7-1
 libsmartcols1:amd64	2.31.1-0.4ubuntu3.5
 libss2:amd64	1.44.1-1ubuntu1.3
-libstdc++6:amd64	8.3.0-6ubuntu1~18.04.1
+libstdc++6:amd64	8.3.0-26ubuntu1~18.04
 libsystemd0:amd64	237-3ubuntu10.39
 libtasn1-6:amd64	4.13-2
 libtinfo5:amd64	6.1-1ubuntu1.18.04
