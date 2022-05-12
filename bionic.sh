@@ -3,17 +3,17 @@
 TAG=ailispaw/ubuntu-essential
 VERSION=18.04
 CODENAME=bionic
-REVISION=20200403
+REVISION=20220427
 
 set -ve
 
 # Build the official image from https://github.com/tianon/docker-brew-ubuntu-core
 wget -q https://raw.githubusercontent.com/tianon/docker-brew-ubuntu-core/dist-amd64/${CODENAME}/Dockerfile
-wget -q https://partner-images.canonical.com/core/${CODENAME}/${REVISION}/ubuntu-${CODENAME}-core-cloudimg-amd64-root.tar.gz
+wget -q https://partner-images.canonical.com/oci/${CODENAME}/${REVISION}/ubuntu-${CODENAME}-oci-amd64-root.tar.gz
 
 docker build -t ubuntu:${CODENAME}-${REVISION} .
 
-rm -f Dockerfile ubuntu-${CODENAME}-core-cloudimg-amd64-root.tar.gz
+rm -f Dockerfile ubuntu-${CODENAME}-oci-amd64-root.tar.gz
 
 # Based on https://github.com/textlab/glossa/blob/master/script/build_ubuntu_essential.sh
 docker build -t ubuntu-essential-multilayer - <<EOF
