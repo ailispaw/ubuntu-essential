@@ -60,6 +60,7 @@ libudev1:amd64					install
 libusb-0.1-4:amd64				install
 libustr-1.0-1:amd64				install
 libuuid1:amd64					install
+libzstd1					install
 login						install
 lsb-base					install
 mawk						install
