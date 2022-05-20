@@ -52,7 +52,7 @@ libpam-modules:amd64	1.1.8-3.6ubuntu2.18.04.3
 libpam-modules-bin	1.1.8-3.6ubuntu2.18.04.3
 libpam-runtime	1.1.8-3.6ubuntu2.18.04.3
 libpam0g:amd64	1.1.8-3.6ubuntu2.18.04.3
-libpcre3:amd64	2:8.39-9
+libpcre3:amd64	2:8.39-9ubuntu0.1
 libseccomp2:amd64	2.5.1-1ubuntu1~18.04.2
 libselinux1:amd64	2.7-2build2
 libsemanage-common	2.7-2build2
